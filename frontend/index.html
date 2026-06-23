@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fingerprint Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 Fingerprint Verification</h1>
+    <p class="subtitle">AI + ZK Proof Authentication</p>
+
+    <form id="form" class="card">
+
+        <div class="input-group">
+            <label>Enroll Fingerprint</label>
+            <input type="file" id="enrolled" required>
+        </div>
+
+        <div class="input-group">
+            <label>Test Fingerprint</label>
+            <input type="file" id="test" required>
+        </div>
+
+        <button type="submit">Verify</button>
+
+    </form>
+
+    <div id="resultBox" class="result hidden">
+        <h2 id="resultText"></h2>
+        <p id="distanceText"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
